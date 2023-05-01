@@ -27,11 +27,14 @@ public class Register {
 			}
 		}
 		if(Check.length < 4) {
-			System.out.println("비밀번호는 4자리 이상이어야 합니다.");
+			System.out.println("비밀번호는 4자리 이상"
+					   +"알파벳이 포함되어 있어야 합니다.");
 			return;
 		}
 		if(alpha == false) {
-			System.out.println("알파벳이 포함되어 있어야 합니다.");
+			System.out.println("비밀번호는 4자리 이상"
+					  +"알파벳이 포함되어 있어야 합니다.");
+		return;
 		}
 		PW[pw_num] = s;
 		++pw_num; // 1 + pw_num
